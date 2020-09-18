@@ -53,7 +53,18 @@
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   font-size: 16px;
 }
+
 .input--text:focus {
   border-color: #51a7e8;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
+}
+/*vender prefix 브라우져 업체별 접두사*/
+.input--text::-webkit-input-placeholder {
+  color: red;
+}
+.input--text::-ms-input-placeholder {
+  color: red;
+}
+.input--text::-moz-input-placeholder {
+  color: red;
 }
