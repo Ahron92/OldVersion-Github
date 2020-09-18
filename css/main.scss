@@ -60,11 +60,49 @@
 }
 /*vender prefix 브라우져 업체별 접두사*/
 .input--text::-webkit-input-placeholder {
-  color: red;
+  color: #cacaca;
 }
 .input--text::-ms-input-placeholder {
-  color: red;
+  color: #cacaca;
 }
 .input--text::-moz-input-placeholder {
-  color: red;
+  color: #cacaca;
+}
+
+/*HEADER*/
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+  background: #fff;
+  .inner {
+    max-width: 980px;
+    height: 78px;
+    margin: 0 auto;
+  }
+  .menu-group {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .logo {
+    margin-right: 10px;
+    a {
+      display: block;
+      background: url("../img/logo.svg");
+      width: 32px;
+      height: 32px;
+      text-indent: -9999px; /*스크린리더기의 구조를 해치지 않기 위한 속성*/
+      &:hover {
+        background: url("../img/logo_on.svg");
+      }
+    }
+  }
+  .main-menu {
+    display: flex;
+    li a {
+      display: block;
+      padding: 10px;
+      color: #3c4146;
+    }
+  }
 }
