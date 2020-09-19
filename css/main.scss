@@ -286,8 +286,6 @@ header {
       max-width: 1200px;
     }
     ul {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
     }
     li {
       padding: 34px 24px;
@@ -295,6 +293,8 @@ header {
       line-height: 1.5;
       border-right: 1px solid #e5e5e5;
       box-sizing: border-box;
+      float: left;
+      width: 25%;
       &:last-child {
         border-right: none;
       }
