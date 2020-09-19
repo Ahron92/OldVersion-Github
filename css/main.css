@@ -260,6 +260,16 @@ header .sub-menu li a:hover {
 
 .section--visual .inner {
   padding: 160px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section--visual .summary {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 90px;
 }
 
 .section--visual .summary__title {
@@ -271,4 +281,40 @@ header .sub-menu li a:hover {
 .section--visual .summary__description {
   color: #fff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px rgba(0, 0, 0, 0.75);
+}
+
+.section--visual #sign-form {
+  width: 340px;
+  margin-top: 16px;
+}
+
+.section--visual #sign-form li {
+  margin-bottom: 17px;
+}
+
+.section--visual #sign-form li:last-child {
+  margin-bottom: 0;
+}
+
+.section--visual #sign-form li .input--text {
+  width: 100%;
+  height: 40px;
+}
+
+.section--visual #sign-form .caption {
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.section--visual #sign-form [type="submit"] {
+  width: 100%;
+  height: 62px;
+  padding: 0 25px;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
