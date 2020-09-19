@@ -7,6 +7,10 @@
   color: #333;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*BTN*/
 .btn {
   height: 34px;
@@ -28,6 +32,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+  color: #333;
 }
 
 .btn:hover::before {
@@ -78,6 +83,21 @@
 
 .input--text::-moz-input-placeholder {
   color: #cacaca;
+}
+
+/*FLOLAT CLEARFIX*/
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.float--left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 /*HEADER*/
@@ -131,4 +151,65 @@ header .main-menu li a {
   display: block;
   padding: 10px;
   color: #3c4146;
+}
+
+header .main-menu li a:hover {
+  color: #4078c0;
+}
+
+header .sign-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .btn-group {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .btn-group .sign-in {
+  margin-right: 4px;
+}
+
+header #search-form {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-right: 12px;
+}
+
+header #search {
+  width: 160px;
+  font-size: 14px;
+}
+
+header #search + [type="submit"] {
+  display: none;
+}
+
+header .sub-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+header .sub-menu li a {
+  padding: 8px;
+  display: block;
+  font-size: 13px;
+  color: #3c4146;
+}
+
+header .sub-menu li a:hover {
+  color: #4078c0;
 }
