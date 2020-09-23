@@ -18,19 +18,19 @@ a {
   background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
   border: 1px solid #d5d5d5;
   border-radius: 4px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 12px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
   color: #333;
 }
@@ -59,17 +59,17 @@ a {
   border: 1px solid #ddd;
   border-radius: 5px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   font-size: 16px;
 }
 
 .input--text:focus {
   border-color: #51a7e8;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
 }
 
 /*vender prefix 브라우져 업체별 접두사*/
@@ -124,7 +124,7 @@ a {
   max-width: 980px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -132,7 +132,7 @@ a {
 header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
   background: #fff;
 }
 
@@ -145,8 +145,8 @@ header .menu-group {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100%;
 }
 
@@ -189,14 +189,14 @@ header .sign-group {
   display: flex;
   height: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header .btn-group {
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,8 +208,8 @@ header .btn-group .sign-in {
 
 header #search-form {
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
   margin-right: 12px;
 }
 
@@ -267,8 +267,8 @@ header .sub-menu li a:hover {
 
 .section--visual .summary {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-right: 90px;
 }
 
@@ -315,8 +315,8 @@ header .sub-menu li a:hover {
   padding: 0 25px;
   font-size: 20px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /*FEATURE*/
@@ -365,7 +365,7 @@ header .sub-menu li a:hover {
   line-height: 1.5;
   border-right: 1px solid #e5e5e5;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   float: left;
   width: 25%;
 }
@@ -378,7 +378,7 @@ header .sub-menu li a:hover {
   max-width: 100%;
   padding: 14px 10% 24px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .section--feature .tiles li h3 {
@@ -404,9 +404,9 @@ header .sub-menu li a:hover {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: none;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*PRICING CARD*/
@@ -426,7 +426,7 @@ header .sub-menu li a:hover {
   border: 1px solid #e5e5e5;
   border-radius: 6px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .section--pricing .card .cell {
@@ -435,11 +435,11 @@ header .sub-menu li a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .section--pricing .card .cell1 .btn {
@@ -452,8 +452,8 @@ header .sub-menu li a:hover {
   font-weight: 300;
   line-height: 1.5;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border-left: 1px solid #e5e5e5;
 }
 
@@ -496,4 +496,81 @@ footer .logo {
 
 footer .logo:hover svg {
   fill: #4078c0;
+}
+
+/*MEDIA*/
+@media (max-width: 1024px) {
+  header.section .inner {
+    max-width: none;
+    height: auto;
+    padding: 0 20px;
+  }
+  header .menu-group,
+  header .sign-group {
+    float: none;
+  }
+  header .menu-group {
+    display: block;
+  }
+  header .logo {
+    padding: 12px 0;
+  }
+  header .main-menu {
+    display: block;
+    margin-bottom: 10px;
+  }
+  header .main-menu li {
+    border-top: 1px solid #e5e5e5;
+  }
+  header .main-menu li a {
+    padding: 16px 0;
+  }
+  header .sign-group {
+    display: block;
+    padding: 10px 0 20px;
+  }
+  header .btn-group {
+    display: block;
+  }
+  header .btn-group .btn {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  header .btn-group .sign-in {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  header #search-form {
+    margin-top: 12px;
+    margin-right: 0;
+  }
+  header #search {
+    width: 100%;
+    height: 42px;
+    text-align: center;
+  }
+  header .sub-menu {
+    margin-top: 12px;
+    margin-right: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  header .toggle {
+    display: none;
+  }
+  header .toggle.on {
+    display: block;
+  }
+  header #toggle-btn {
+    background: url("../img/toggle-btn.svg");
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+    text-indent: -9999px;
+  }
 }
