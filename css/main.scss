@@ -1,4 +1,5 @@
 /*COMMON*/
+
 .body__container {
   font: {
     family: "Roboto", sans-serif;
@@ -18,7 +19,7 @@ a {
   background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
   border: 1px solid #d5d5d5;
   border-radius: 4px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   padding: 0 12px;
   font: {
@@ -395,6 +396,81 @@ footer {
     height: 24px;
     &:hover svg {
       fill: #4078c0;
+    }
+  }
+}
+
+/*MEDIA*/
+@media (max-width: 1024px) {
+  header {
+    &.section .inner {
+      max-width: none;
+      height: auto;
+      padding: 0 20px;
+    }
+    .menu-group,
+    .sign-group {
+      float: none;
+    }
+    .menu-group {
+      display: block;
+    }
+    .logo {
+      padding: 12px 0;
+    }
+    .main-menu {
+      display: block;
+      margin-bottom: 10px;
+      li {
+        border-top: 1px solid #e5e5e5;
+        a {
+          padding: 16px 0;
+        }
+      }
+    }
+    .sign-group {
+      display: block;
+      padding: 10px 0 20px;
+    }
+    .btn-group {
+      display: block;
+      .btn {
+        justify-content: center;
+      }
+      .sign-in {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+    }
+    #search-form {
+      margin-top: 12px;
+      margin-right: 0;
+    }
+    #search {
+      width: 100%;
+      height: 42px;
+      text-align: center;
+    }
+    .sub-menu {
+      margin-top: 12px;
+      margin-right: 0;
+      justify-content: center;
+    }
+    .toggle {
+      display: none;
+    }
+    .toggle.on {
+      display: block;
+    }
+    #toggle-btn {
+      background: url("../img/toggle-btn.svg");
+      width: 18px;
+      height: 24px;
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      cursor: pointer;
+      text-indent: -9999px;
     }
   }
 }
