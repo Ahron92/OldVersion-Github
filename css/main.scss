@@ -190,13 +190,24 @@ header {
       }
     }
   }
+  #toggle-btn {
+    display: none;
+    background: url("../img/toggle-btn.svg");
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+    text-indent: -9999px;
+  }
 }
 
 /*VISUAL*/
 .section--visual {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: left bottom;
   background-size: cover;
   &::before {
     content: "";
@@ -463,14 +474,81 @@ footer {
       display: block;
     }
     #toggle-btn {
-      background: url("../img/toggle-btn.svg");
-      width: 18px;
-      height: 24px;
-      position: absolute;
-      top: 16px;
-      right: 20px;
-      cursor: pointer;
-      text-indent: -9999px;
+      display: block;
+      // background: url("../img/toggle-btn.svg");
+      // width: 18px;
+      // height: 24px;
+      // position: absolute;
+      // top: 16px;
+      // right: 20px;
+      // cursor: pointer;
+      // text-indent: -9999px;
+      //media 쿼리에는 기본 속성을 작성하지 않고 보이게만 만드는 것이 더 최적화이다.
+    }
+  }
+
+  /*VISUAL*/
+  .section--visual {
+    background-image: url("../img/bg-small.jpg");
+    .inner {
+      display: block;
+      max-width: none;
+      padding: 80px 20px;
+    }
+    .summary {
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
+    #sign-form {
+      width: auto;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  /*FEATURE*/
+  .section--feature {
+    .summary {
+      padding: 66px 20px 0 20px;
+    }
+    .tiles {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+        li {
+          &:nth-child(2) {
+            border-right: none;
+          }
+          img {
+            padding: 14px 30% 24px;
+          }
+        }
+      }
+    }
+  }
+
+  /*WHERE IS*/
+  .section--where-is .inner {
+    max-width: none;
+    padding: 80px 20px 0 20px;
+  }
+
+  .section--pricing {
+    .inner {
+      max-width: none;
+    }
+    .card .cell2 {
+      font-size: 20px;
+    }
+  }
+
+  /*FOOTER*/
+  footer {
+    .inner {
+      padding: 50px 20px;
+    }
+    .logo {
+      display: none;
     }
   }
 }
