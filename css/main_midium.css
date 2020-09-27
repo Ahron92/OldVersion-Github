@@ -104,8 +104,11 @@
     max-width: none;
     padding: 80px 20px 0 20px;
   }
+  /*PRICING*/
   .section--pricing .inner {
     max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .section--pricing .card .cell2 {
     font-size: 20px;
