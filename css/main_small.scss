@@ -1,3 +1,55 @@
-header {
-  background: red;
+/*COMMON*/
+
+.summary {
+  &__title {
+    font-size: 34px !important;
+  }
+  &__description {
+    font-size: 22px;
+  }
+}
+
+/*FEATURE*/
+.section--feature {
+  .tiles ul {
+    grid-template-columns: 100%;
+    li {
+      border-bottom: 1px solid #e5e5e5;
+      border-right: none;
+    }
+  }
+}
+
+/*WHERE IS*/
+.section--where-is #map {
+  width: auto;
+  margin-top: 40px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-left: none;
+  border-right: none;
+}
+
+/*PRICING*/
+.section--pricing {
+  .card {
+    display: block;
+    .cell2 {
+      border-left: none;
+      border-top: 1px solid #e5e5e5;
+    }
+  }
+}
+
+/*FOOTER*/
+footer .site-links {
+  float: none;
+  display: block;
+  text-align: center;
+  &:first-child {
+    margin-bottom: 20px;
+  }
+  li {
+    display: inline;
+  }
 }
