@@ -101,8 +101,9 @@
     }
     .tiles {
       ul {
-        grid-template-columns: repeat(2, 1fr);
         li {
+          width: 50%;
+          border-bottom: 1px solid #e5e5e5;
           &:nth-child(2) {
             border-right: none;
           }

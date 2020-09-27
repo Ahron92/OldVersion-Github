@@ -8,12 +8,8 @@
 }
 
 /*FEATURE*/
-.section--feature .tiles ul {
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-}
-
 .section--feature .tiles ul li {
+  width: 100%;
   border-bottom: 1px solid #e5e5e5;
   border-right: none;
 }
