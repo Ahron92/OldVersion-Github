@@ -2,7 +2,6 @@
 
 ## 1. 사용한 언어 📘
 
----
 
 - HTML
 - CSS
@@ -11,7 +10,6 @@
 
 ## 2. project를 통해 습득한 내용 📗
 
----
 
 - Responsive Web site를 만들면서 Google 검색을 통해 최적화하기 위해서는 link태그를 여러번 나누어 가져오는 것은 HTTP Request를 보다 많이 일으켜 안좋다는 것을 알게됨
 
@@ -33,7 +31,7 @@
 - ::placeholder 를 통해 form요소들의 placeholder색상을 바꿀 수 있음
 - 동영상 iframe의 크기 최적화하는 방법을 알게 됨
 
-## 3. 발전해야 할 부분
+## 3. 발전해야 할 부분 💡
 
 - google map api에 대한 이해가 부족하고 만드는데에만 일단 집중해서 추 후 보완이 필요
 
